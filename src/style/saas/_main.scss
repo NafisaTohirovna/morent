@@ -1,0 +1,168 @@
+#main {
+ padding: 160px 0 50px 0;
+  background: $bg;
+  .homeCardContainer {
+    min-width: 375px;
+    overflow-y: scroll;
+    gap: 20px;
+  }
+
+  .homeCard {
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+    padding: 24px;
+    width: 640px;
+    min-width: 360px;
+    background-image: url("/src/images/Ads-bg-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .homeCard:hover {
+    background-image: url("/src/images/Ads2-bg-img.png");
+  }
+
+  .homeCard:hover .homeCardBtn {
+    background-color: #54a6ff;
+  }
+
+  .homeCardTitle {
+    color: var(--primary-0, #fff);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.96px;
+    max-width: 272px;
+    margin-bottom: 12px;
+  }
+
+  .cardText {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+    max-width: 284px;
+    margin-bottom: 20px;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 406px;
+    margin-left: 107px;
+  }
+
+  .top-content {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include max-BP(950px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  .topsection-button {
+    width: 60px;
+    height: 60px;
+    outline: none;
+    border: none;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    background: #3563e9;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    i {
+      color: white;
+    }
+    @include max-BP(950px) {
+      top: 50%;
+     transform: translate(-50% , -50%);
+    }
+  }
+
+  .pick-up {
+    width: 582px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 24px 48px;
+    @include max-BP(1100px) {
+      width: 450px;
+    }
+    @include max-BP(950px) {
+      width: 100%;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+  }
+
+  .pickup-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .pickup-title input {
+    cursor: pointer;
+  }
+
+  .pickup-title label {
+    color: #1a202c;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+    cursor: pointer;
+  }
+
+  .pick-up-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
+  .pick-up-cards h1 {
+    color: #1a202c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+  }
+
+  .pick-up-cards select {
+    outline: none;
+    border: none;
+    color: #90a3bf;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  .pick-up-card:not(:last-child) {
+    padding-right: 30px;
+    border-right: 1px solid rgba(195, 212, 233, 0.4);
+  }
+}

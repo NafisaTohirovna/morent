@@ -1,0 +1,35 @@
+footer{
+    .footer-top{
+      padding: 80px;
+      align-items: start;
+      @include max-BP(850px){
+        flex-direction: column;
+      }
+    }
+    .footer-title{
+      p{
+        margin: 20px 0;
+        max-width: 292px;
+  
+      }
+    }
+  .footer-menu{
+    flex-wrap: wrap;
+  }
+    ul{
+      li{
+        margin: 20px 0;
+      }
+    }
+    .footer-bottom{
+      padding: 80px;
+      border-top: 1px solid $white-gray;
+      @include max-BP(850px){
+        flex-direction: column;
+        align-items: start;
+      }
+      @include max-BP(500px){
+        display: none;
+      }
+    }
+  }

@@ -1,0 +1,49 @@
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding:  20px 0;
+    background: $bg;
+  }
+ .popular-card-wrap{
+  background: $bg;
+ }
+  .popular-card{
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .card {
+    width: 304px;
+    border-radius: 10px;
+    padding: 24px;
+    background: $white;
+    cursor: pointer;
+    .card-img {
+      padding: 60px 0;
+    }
+    .card-img:hover{
+      transform: scale(1.1);
+    }
+    .card-specification {
+      margin: 24px 0;
+    }
+  }
+  .popular-card-title{
+    background: $bg;
+    padding: 20px 0;
+    p{
+      color: #90A3BF;
+    }
+  }
+  .show-card{
+    background-color: $bg;
+    padding: 50px 0;
+    text-align: center;
+  }

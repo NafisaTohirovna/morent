@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+@import "saas/color";
+@import 'saas/variable';
+@import 'saas/breakpoints';
+
+@import 'saas/main';
+@import 'saas/header';
+@import 'saas/modal';
+@import 'saas/catalogueCard';
+@import 'saas/footer';
+
+
+
+
