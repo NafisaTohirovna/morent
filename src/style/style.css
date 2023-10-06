@@ -399,6 +399,10 @@ header .profile-notification .notification span {
   font-size: 18px;
 }
 
+#searchCard {
+  margin-top: 140px;
+}
+
 .cards {
   display: flex;
   align-items: center;
@@ -429,6 +433,7 @@ header .profile-notification .notification span {
   padding: 24px;
   background: #FFF;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 .card .card-img {
   padding: 60px 0;
@@ -438,6 +443,10 @@ header .profile-notification .notification span {
 }
 .card .card-specification {
   margin: 24px 0;
+}
+
+.card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .popular-card-title {

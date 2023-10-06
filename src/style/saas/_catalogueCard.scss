@@ -25,6 +25,7 @@
     padding: 24px;
     background: $white;
     cursor: pointer;
+    transition: .5s ease;
     .card-img {
       padding: 60px 0;
     }
@@ -34,6 +35,9 @@
     .card-specification {
       margin: 24px 0;
     }
+  }
+  .card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   .popular-card-title{
     background: $bg;

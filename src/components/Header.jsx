@@ -2,13 +2,12 @@ import { useState } from "react";
 import Modal from "./Modal";
 import Card from "./Card";
 
-const Header = ({ data, setData, likedCars, setLikedCars }) => {
+const Header = ({ data, setData, likedCars, setLikedCars, handleSearch }) => {
   const [showLikeModal, setShowLikeModal] = useState(false);
 
   const ToggleModal = () => {
     setShowLikeModal((prev) => !prev);
   };
-
   return (
     <>
       {showLikeModal && (
@@ -40,11 +39,15 @@ const Header = ({ data, setData, likedCars, setLikedCars }) => {
               <img src={require("../images/logo.png")} alt="" />
             </a>
             <div className="search d-flex">
-              <label for = 'search' className="search-icon">
+              <label for="search" className="search-icon">
                 {" "}
                 <i className="fa-solid fa-magnifying-glass"></i>
               </label>
-              <input type="text" placeholder="Search something here" id="search"/>
+              <input
+                type="text"
+                placeholder="Search something here"
+                onChange={handleSearch}
+              />
               <div className="filter-icon">
                 <img src={require("../images/filter.png")} alt="" />
               </div>
